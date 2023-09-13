@@ -11,7 +11,7 @@ namespace ProvaAdmissionalApiSul
         
         static void Main(string[] args)
         {
-            ElevadorService elevador = new ElevadorService();
+            IElevadorService elevador = new ElevadorService();
             var andarMenosUtilizado = elevador.andarMenosUtilizado();
             var elevadorMaisFrequentado = elevador.elevadorMaisFrequentado();
             var elevadorMenosFrequentado = elevador.elevadorMenosFrequentado();
